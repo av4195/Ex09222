@@ -1,6 +1,7 @@
 package com.example.ex09222;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -177,5 +178,15 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alert = builder4.create();
         alert.show();
 
+    }
+
+    /**
+     * this method is used to move to the credit activity
+     *
+     * @param v
+     */
+    public void moveToCredit(View v){
+        Intent intent = new Intent(this, CreditActivity.class);
+        startActivity(intent);
     }
 }

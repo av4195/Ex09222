@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="chooseActivity"
-            android:text="Button" />
+            android:text="Choose activity" />
 
         <Button
             android:id="@+id/button2"
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="chooseAddones"
-            android:text="Button" />
+            android:text="Snacks/Equipment" />
 
         <Button
             android:id="@+id/button4"
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="chooseName"
-            android:text="Button" />
+            android:text="message" />
 
         <Button
             android:id="@+id/button3"
@@ -70,7 +70,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="reset"
-            android:text="Button" />
+            android:text="reset" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="moveToCredit"
+            android:text="CREDITS" />
 
     </LinearLayout>
 
