@@ -12,6 +12,14 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * @author Adi Waizman
+ * @version 1.0
+ * @since 06/01/2026
+ * <p>
+ * this class is the main activity of the calculator app
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     AlertDialog.Builder builder1, builder2, builder3, builder4;
@@ -45,11 +53,18 @@ public class MainActivity extends AppCompatActivity {
         tv = findViewById(R.id.tv);
     }
 
+    /**
+     * this method is used to update the text view
+     */
     private void updateTextView() {
         String textToShow = activityName + "\n" + selectedAddonsString + "\n" + nameString;
         tv.setText(textToShow);
     }
 
+    /**
+     * this method is used to choose the activity and change the background color based on the choice
+     *
+     */
     public void chooseActivity(View v) {
         builder1.setTitle("Choose Activity");
         builder1.setCancelable(true);
@@ -74,6 +89,12 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alert = builder1.create();
         alert.show();
     }
+
+    /**
+     * this method is used to choose the addons for the activity and update the text view based on the choice
+     *
+     * @param v
+     */
 
     public void chooseAddones(View v){
         builder2.setTitle("Choose addons for " + activityName);
@@ -103,6 +124,11 @@ public class MainActivity extends AppCompatActivity {
         alert.show();
     }
 
+    /**
+     * this method is used to input the users name and to pop up a message
+     *
+     * @param v
+     */
     public void chooseName(View v) {
         builder3.setTitle("Choose name");
         final EditText editText = new EditText(this);
@@ -122,7 +148,12 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alert = builder3.create();
         alert.show();
     }
-    
+
+    /**
+     * this method is used to reset the previous choices
+     *
+     * @param v
+     */
     public void reset(View v){
         builder4.setTitle("reset");
         builder4.setMessage("are you sure you want to reset?");
