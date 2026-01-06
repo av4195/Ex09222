@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * @version 1.0
  * @since 06/01/2026
  * <p>
- * this class is the main activity of the calculator app
+ * this class is the main activity of a night out app
  */
 
 public class MainActivity extends AppCompatActivity {
